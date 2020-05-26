@@ -5,6 +5,8 @@ import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 
+import com.bumptech.glide.Glide;
+
 import kr.co.tjoeun.myprofile_20200526.databinding.ActivityMainBinding;
 
 public class MainActivity extends BaseActivity {
@@ -26,6 +28,9 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void setValues() {
+
+//        인터넷에 있는 이미지 불러오기 => 인터넷 연결 권한 필요
+        Glide.with(mContext).load("https://i.pinimg.com/736x/0b/2f/8a/0b2f8a51314ab1ebe0505aee843a33b1.jpg").into(binding.profileImg);
 
     }
 }
