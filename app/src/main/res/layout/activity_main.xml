@@ -41,6 +41,39 @@
         </LinearLayout>
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전화번호" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/phonNumTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="010-7777-8888"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/callBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전화 걸기" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 </layout>
